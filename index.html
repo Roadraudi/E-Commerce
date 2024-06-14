@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplements - PrimeSupplements</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styleLogin.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">PrimeSupplements</a>
+            <div class="icons-container">
+                <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                <i class='bx bx-user-circle' id="loginBtn"></i>
+            </div>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                     
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">50€</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class="bx bx-x" id="close-cart"></i>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Boost your life</h1>
+        <h2> - with our natural food supplements!</h2>
+        <h4>Discover our offers and save up to 30%</h4>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="img/image1_protein.png" alt="" class="product-img">
+                <h2 class="product-title">Whey Proteinpulver</h2>
+                <span class="price">29.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image2_kreatin.png" alt="" class="product-img">
+                <h2 class="product-title">Kreatin</h2>
+                <span class="price">20.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image3_vitamind3k23.png" alt="" class="product-img">
+                <h2 class="product-title">Vitamin D k23</h2>
+                <span class="price">9.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image4_omega3.png" alt="" class="product-img">
+                <h2 class="product-title">Omega 3</h2>
+                <span class="price">17.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image5_zink.png" alt="" class="product-img">
+                <h2 class="product-title">Zink</h2>
+                <span class="price">8.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image6_aminosäure.png" alt="" class="product-img">
+                <h2 class="product-title">Aminosäure</h2>
+                <span class="price">11.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image7_vitaminC.png" alt="" class="product-img">
+                <h2 class="product-title">Vitamin C</h2>
+                <span class="price">6.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/image8_CaZnMg.png" alt="" class="product-img">
+                <h2 class="product-title">Kalium, Zink, Magnesium</h2>
+                <span class="price">14.99€</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Adress: </strong>Lohrtalweg 10, 74821 Mosbach</p></br>
+                <p><strong>Email: </strong>contact@primesupplements.com</p></br>
+                <p><strong>Phone: </strong>+1234567890</p>
+
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class='bx bxl-facebook' ></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-youtube'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-tiktok'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="termsAndConditions.html">Terms & Conditions</a></li>
+                    <li><a href="privacyPolicy.html" >Privacy Policy</a></li>
+                    <li><a href="shippingAndReturns.html">Shipping & Returns</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>My Account</h3>
+                <ul>
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#" >My Wishlist</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <div class="payment">
+                <p>Secured Payment Gateways</p>
+                <img src="img/image_pay.png">
+            </div>
+        </div>
+    </footer>
+    
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="wrapper">
+                <form action="">
+                    <h1>Login</h1>
+                   <div class="input-box"> 
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                   </div> 
+                   <div class="input-box"> 
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                   </div> 
+
+                   <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me </label>
+                    <a href="#">Forgot password</a>
+                   </div>
+
+                   <button type="submit" class="btn">Login</button>
+
+                   <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register here</a></p>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/scriptLogin.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
