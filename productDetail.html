@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplements - PrimeSupplements</title>
+    <title>Product Detail - Whey Proteinpulver</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styleLogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <div class="nav container">
-            <a href="#" class="logo">PrimeSupplements</a>
+            <a href="index.html" class="logo">PrimeSupplements</a>
             <div class="icons-container">
                 <i class="bx bx-shopping-bag" id="cart-icon"></i>
                 <i class='bx bx-user-circle' id="loginBtn"></i>
@@ -29,74 +29,19 @@
         </div>
     </header>
 
-    <section id="hero">
-        <h1>Boost your life</h1>
-        <h2> - with our natural food supplements!</h2>
-        <h4>Discover our offers and save up to 30%</h4>
-        <button>Shop Now</button>
-    </section>
-
-    <section class="shop container">
-        <h2 class="section-title">Shop Products</h2>
-        <div class="sort-options">
-            <label for="sort">Sort by:</label>
-            <select id="sort" onchange="sortProducts()">
-                <option value="default">Default</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-            </select>
+    <section class="product-detail container">
+        <div class="product-detail-image">
+            <img src="img/image1_protein.png" alt="Whey Proteinpulver">
         </div>
-        <div class="shop-content" id="product-list">
-            <div class="product-box">
-                <a href="productDetail.html">
-                    <img src="img/image1_protein.png" alt="" class="product-img">
-                </a>
-                <h2 class="product-title">Whey Protein Powder</h2>
-                <span class="price">29.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
+        <div class="product-detail-info">
+            <h2>Whey Protein Powder</h2>
+            <span class="price">29.99€</span>
+            <p>Increase your muscle mass and improve your fitness with our high-quality whey protein powder. Ideal for athletes and fitness enthusiasts.</p>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
             </div>
-            <div class="product-box">
-                <img src="img/image2_kreatin.png" alt="" class="product-img">
-                <h2 class="product-title">Creatine</h2>
-                <span class="price">20.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="img/image3_vitamind3k23.png" alt="" class="product-img">
-                <h2 class="product-title">Vitamin D3+K2</h2>
-                <span class="price">9.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="img/image4_omega3.png" alt="" class="product-img">
-                <h2 class="product-title">Omega 3</h2>
-                <span class="price">17.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="img/image5_zink.png" alt="" class="product-img">
-                <h2 class="product-title">Zinc</h2>
-                <span class="price">8.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="img/image6_aminosäure.png" alt="" class="product-img">
-                <h2 class="product-title">Amino acids</h2>
-                <span class="price">11.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="img/image7_vitaminC.png" alt="" class="product-img">
-                <h2 class="product-title">Vitamin C</h2>
-                <span class="price">6.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="img/image8_CaZnMg.png" alt="" class="product-img">
-                <h2 class="product-title">Potassium, Zinc, Magnesium</h2>
-                <span class="price">14.99€</span>
-                <i class="bx bx-shopping-bag add-cart"></i>
-            </div>
+            <a href="#" class="btn add-to-cart">Add to Cart</a>
         </div>
     </section>
 
@@ -170,9 +115,8 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/productDetail.js"></script>
     <script src="js/scriptLogin.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/sortingProducts.js"></script>
 </body>
 </html>
+

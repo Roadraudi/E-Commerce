@@ -1,11 +1,14 @@
-// Cart
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
 
 // Open Cart
-cartIcon.onclick = () => {
+function openCart() {
     cart.classList.add('active');
+}
+
+cartIcon.onclick = () => {
+    openCart();
 };
 
 // Close Cart
@@ -22,28 +25,24 @@ if (document.readyState === 'loading') {
 
 // Making Function
 function ready() {
-    // Remove Item From Cart
     var removeCartButtons = document.getElementsByClassName('cart-remove');
     for (var i = 0; i < removeCartButtons.length; i++) {
         var button = removeCartButtons[i];
         button.addEventListener('click', removeCartItem);
     }
     
-    // Quantity Changes
     var quantityInputs = document.getElementsByClassName('cart-quantity');
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i];
         input.addEventListener('change', quantityChanged);
     }
 
-    // Add to Cart
     var addCartButtons = document.getElementsByClassName('add-cart');
     for (var i = 0; i < addCartButtons.length; i++) {
         var button = addCartButtons[i];
         button.addEventListener('click', addCartClicked);
     }
 
-    // Buy Button Work
     document.getElementsByClassName('btn-buy')[0].addEventListener('click', buyButtonClicked);
 }
 
@@ -81,6 +80,7 @@ function addCartClicked(event) {
     var price = shopItem.querySelector('.price').innerText;
     var imageSrc = shopItem.querySelector('.product-img').src;
     addItemToCart(title, price, imageSrc);
+    openCart(); // Warenkorb öffnen
     updateTotal();
 }
 
@@ -129,13 +129,9 @@ function updateTotal() {
     document.querySelector('.total-price').innerText = total + '€';
 }
 
-// Get the modal
+
 var modal = document.getElementById("loginModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("loginBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
