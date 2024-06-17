@@ -6,15 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const price = document.querySelector('.price').innerText;
         const imageSrc = document.querySelector('.product-img').src;
 
-        // Funktion zum Hinzufügen des Produkts zum Warenkorb in index.html
+        // Call the function to add the product to the cart
         addToCart(title, price, imageSrc);
     });
 
+    // Define the function to add the product to the cart
     function addToCart(title, price, imageSrc) {
-        // Speichern Sie das Produkt lokal oder senden Sie es über eine API an index.html
-        // Beispiel:
         localStorage.setItem('cartItem', JSON.stringify({ title, price, imageSrc }));
-        // Navigieren Sie zur Hauptseite (index.html)
         window.location.href = 'index.html';
     }
 });
